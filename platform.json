@@ -1,0 +1,20 @@
+{
+  "name": "greycode",
+  "title": "Greycode IoT Platform",
+  "description": "Custom PlatformIO platform for Greycode IoT boards based on the ESP32 architecture.",
+  "homepage": "https://greycode.co.za",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Greycode-za/greycode-platform.git"
+  },
+  "version": "1.0.0",
+  "packageRepositories": [
+    "https://dl.registry.platformio.org"
+  ],
+  "platforms": ["espressif32"],
+  "frameworks": ["arduino", "espidf"],
+  "build": {
+    "core": "esp32"
+  }
+}
