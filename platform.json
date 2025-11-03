@@ -1,22 +1,16 @@
 {
   "name": "greycode",
   "title": "Greycode IoT Platform",
-  "description": "Custom PlatformIO platform for Greycode IoT development boards (ESP32-based).",
+  "description": "Greycode platform for Greyboard IoT development boards",
+  "version": "1.0.0",
   "homepage": "https://github.com/greycode-za/greycode-platform",
   "license": "MIT",
-  "version": "1.0.0",
+  "engines": {
+    "platformio": ">=6.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/greycode-za/greycode-platform.git"
-  },
-  "packageRepositories": [
-    "https://dl.registry.platformio.org"
-  ],
-  "platforms": {
-    "espressif32": {
-      "package": "platformio/platform-espressif32",
-      "version": "^6.6.0"
-    }
   },
   "frameworks": {
     "arduino": {
@@ -24,19 +18,24 @@
       "script": "builder/frameworks/arduino.py"
     }
   },
-  "boards": {
-    "greyboard": "boards/greyboard.json"
-  },
   "packages": {
     "toolchain-xtensa-esp32": {
       "type": "toolchain",
       "owner": "platformio",
-      "version": "^8.4.0+2021r2"
+      "version": "~2.80400.0"
+    },
+    "framework-arduinoespressif32": {
+      "type": "framework",
+      "owner": "platformio",
+      "version": "~3.20003.0"
     },
     "tool-esptoolpy": {
       "type": "uploader",
       "owner": "platformio",
-      "version": "^1.40500.0"
+      "version": "~1.40501.0"
     }
+  },
+  "build": {
+    "core": "esp32"
   }
 }
