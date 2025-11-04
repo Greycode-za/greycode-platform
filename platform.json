@@ -19,20 +19,25 @@
     }
   },
   "packages": {
-    "toolchain-xtensa-esp32": {
+    "toolchain-xtensa-esp32s3": {
       "type": "toolchain",
       "owner": "platformio",
-      "version": "~2.80400.0"
+      "version": "~12.2.0+20240529"
     },
     "framework-arduinoespressif32": {
       "type": "framework",
       "owner": "platformio",
-      "version": "~3.20003.0"
+      "version": "~3.20009.0"
     },
     "tool-esptoolpy": {
       "type": "uploader",
       "owner": "platformio",
       "version": "~1.40501.0"
+    },
+    "tool-mkspiffs": {
+      "type": "uploader",
+      "owner": "platformio",
+      "version": "~2.230.0"
     }
   },
   "build": {
