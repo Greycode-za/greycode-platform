@@ -1,7 +1,7 @@
 {
   "name": "greycode",
   "title": "Greycode IoT Platform",
-  "description": "Greycode platform for Greyboard IoT development boards",
+  "description": "Custom PlatformIO platform for Greycode IoT development boards",
   "version": "1.0.0",
   "homepage": "https://github.com/greycode-za/greycode-platform",
   "license": "MIT",
@@ -19,10 +19,10 @@
     }
   },
   "packages": {
-    "toolchain-xtensa-esp32s3": {
+    "toolchain-xtensa-esp32": {
       "type": "toolchain",
       "owner": "platformio",
-      "version": "~12.2.0+20240529"
+      "version": "~2.80400.0"
     },
     "framework-arduinoespressif32": {
       "type": "framework",
